@@ -4,11 +4,11 @@ function varArgs(...args: number[]) {
     {
       sum+=args[i];
     }
-    console.log(sum);
+    return sum;
   }
-  document.write("The sum of arguments 1,2,3,4: ");
-  varArgs(1,2,3,4);
-  document.write("<br>The sum of arguments 1,2:");
-  varArgs(1,2);
-  document.write("<br>The sum of arguments 1,3,4:");
-  varArgs(1,3,4);
+  document.write("The sum of arguments 1,2,3,4: "+varArgs(1,2,3,4));
+  
+  document.write("<br>The sum of arguments 1,2:"+varArgs(1,2));
+  
+  document.write("<br>The sum of arguments 1,3,4:"+varArgs(1,2,3));
+  
