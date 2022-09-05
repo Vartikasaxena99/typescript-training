@@ -2,7 +2,7 @@ function varArgs(...args: number[]) {
     let sum=0;
     for(let i=0;i<args.length;i++)
     {
-       sum+=args[i];
+      sum+=args[i];
     }
     console.log(sum);
   }
