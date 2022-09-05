@@ -10,7 +10,7 @@ function varArgs(...args) {
     }
     return sum;
 }
-let value = prompt("Enter the length of arguments");
+let value= prompt("Enter the length of arguments");
 let y = [];
 for (let i = 0; i < value; i++) {
     let val = prompt("Enter the value of arguments");

@@ -6,11 +6,11 @@ function varArgs(...args: number[]) {
     }
     return sum;
   }
-  let value:any=console.log("Enter the length of arguments");
+  let value:any=prompt("Enter the length of arguments");
   let y:number[]=[];
   for(let i=0;i<value;i++)
   {
-    let val:any=console.log("Enter the value of arguments");
+    let val:any=prompt("Enter the value of arguments");
     let val1=parseInt(val);
     if(val1===0)
     {
