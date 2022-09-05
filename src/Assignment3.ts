@@ -6,9 +6,19 @@ function varArgs(...args: number[]) {
     }
     return sum;
   }
-  document.write("The sum of arguments 1,2,3,4: "+varArgs(1,2,3,4));
+  let value:any=console.log("Enter the length of arguments");
+  let y:number[]=[];
+  for(let i=0;i<value;i++)
+  {
+    let val:any=console.log("Enter the value of arguments");
+    let val1=parseInt(val);
+    if(val1===0)
+    {
+      console.log("You have entered 0");
+      break;
+    }
+    y.push(val1);
+  }
+  console.log("The sum of arguments is: "+varArgs(...y));
   
-  document.write("<br>The sum of arguments 1,2:"+varArgs(1,2));
-  
-  document.write("<br>The sum of arguments 1,3,4:"+varArgs(1,2,3));
   

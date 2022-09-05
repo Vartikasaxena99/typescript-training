@@ -1,14 +1,26 @@
 "use strict";
 function varArgs(...args) {
     let sum = 0;
+    
     for (let i = 0; i < args.length; i++) {
-        sum += args[i];
+        let n=parseInt(args[i]);
+        sum += n;
+        
+        
     }
-     return sum;
+    return sum;
 }
-
-document.write("The sum of arguments 1,2,3,4: "+varArgs(1,2,3,4));
-  
-document.write("<br>The sum of arguments 1,2:"+varArgs(1,2));
-  
-document.write("<br>The sum of arguments 1,3,4:"+varArgs(1,2,3));
+let value = prompt("Enter the length of arguments");
+let y = [];
+for (let i = 0; i < value; i++) {
+    let val = prompt("Enter the value of arguments");
+    let val1 = parseInt(val);
+    if(val1===0)
+    {
+        alert("You have entered 0");
+        break;
+    }
+    y.push(val1);
+    
+}
+document.write("The sum of arguments is : " + varArgs(...y));
